@@ -92,7 +92,7 @@ elif analysis_type == "Year-wise Analysis":
 # ---------------- City-wise Analysis ----------------
 elif analysis_type == "City-wise Analysis":
 
-    st.title("🏙️ City-wise Funding Analysis")
+    st.title(" City-wise Funding Analysis")
 
     city_funding = (
         df.groupby("city")["amount"]
@@ -129,3 +129,8 @@ elif analysis_type == "Startup-wise Analysis":
 
     st.subheader("Funding Details")
     st.dataframe(startup_df)
+
+    st.markdown("---")
+    st.markdown(
+    " **Project by Dipali Jadhav** | Python • Pandas • Streamlit • Data Analytics"
+)
